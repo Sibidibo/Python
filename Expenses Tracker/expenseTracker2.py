@@ -48,6 +48,7 @@ def amountSpent():
 
 def amountPerCategory():
     categories = {}
+    counter = 0
     for expense in expenses:
         if expense['category'] not in categories:
             categories[expense['category']] = 0
